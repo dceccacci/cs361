@@ -31,17 +31,18 @@ end
 # ----------------- Creating and Printing Players Below ---------------
 
 # Creates an array to hold the players
-playerArray = []
+allPlayers = []
 
 # Creates fifty Player classes and adds them to the player array
-for i in 1..50 do
-    newName = "Player #{i}"
+50.times do |i|
+    newName = "Player #{i+1}"
     newScore = rand(10..300)
     newPlayer = Player.new(newName, newScore)
-    playerArray.push(newPlayer)
+    allPlayers.push(newPlayer)
 end
 
 # For each player in the array, prints out their name and score
-for player in playerArray do
+allPlayers.each do |player|
+#for player in allPlayers do
     puts "Ready #{player.name}! Score: #{player.score}"
 end
