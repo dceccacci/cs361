@@ -83,7 +83,7 @@ class Game
   end
 
   def results()
-    puts("YOU WON...PROBABLY!")
+    return ("YOU WON...PROBABLY!")
   end
 end
 
